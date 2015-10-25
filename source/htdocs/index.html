@@ -2,9 +2,12 @@
   "title": "Template for Bootstrap",
   "description": "Page Description"
 })
-<div class="col-1-1">
-  
-<div class="logo"></div>
+
+  @@include('htdocs/_templates/_navbar.html')
+  @@include('htdocs/_templates/_slider.html')
+<div class="grid content-wraper">  
+  @@include('htdocs/_templates/_quote.html')
+  @@include('htdocs/_templates/_companies.html')
 </div>
 
 
