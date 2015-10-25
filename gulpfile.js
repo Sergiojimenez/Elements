@@ -94,7 +94,6 @@ gulp.task('html-default', function() {
   var styles = gulp.src(source + '/scss/**/style.scss')
     .pipe($.plumber(plumberConfig))
     .pipe($.rubySass())
-    .pipe($.autoprefixer((["last 1 version", "> 1%", "ie 8", "ie 7"], { cascade: true })))
     .pipe(gulp.dest(build + '/css/'));
 
   return gulp.src([
