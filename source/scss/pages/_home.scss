@@ -1,3 +1,111 @@
 /* ====================================
  * Homepage
  * ==================================== */
+body {
+    background-color: $color-light-gray;
+}
+
+.content-wraper {
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 0px 5px $color-gray;
+}
+
+/* ====================================
+ * Quote
+ * ==================================== */
+
+.quote {
+    color: $color-dark-gray;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    img {
+        margin-top: 3rem;
+        height: 3rem;
+    }
+}
+
+/* ====================================
+ * Companies
+ * ==================================== */
+
+.companies {
+    %adding-background {
+        width: 260px;
+        background-repeat: no-repeat;
+        @include background-image-retina(/img / Extra / company-logo-frame, png, 200, 300);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-heading {
+        max-width: 70%;
+        margin-top: 0;
+        margin-left: auto;
+        margin-bottom: 5rem;
+        margin-right: auto;
+        color: $color-dark-gray;
+        &:after {
+            content: ' ';
+            display: block;
+            border: 1px solid red;
+            max-width: 30%;
+            margin: 1rem auto;
+        }
+    }
+    &-text {
+        max-width: 70%;
+        margin-top: 0;
+        margin-left: auto;
+        margin-bottom: 0;
+        margin-right: auto;
+        color: $color-dark-gray;
+    }
+    &-images-container {
+        padding: 10rem;
+    }
+    &-image-list {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10rem;
+        margin-left: 10%;
+        margin-bottom: 0;
+        margin-right: 10%;
+    }
+    &-images-item {
+        @extend %adding-background;
+        img {
+            width: 260px;
+            padding-top: 31%;
+            padding-bottom: 31%;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+    }
+    &-images-item--mcdonalds {
+        @extend %adding-background;
+        img {
+            width: 260px;
+            padding-top: 31%;
+            padding-bottom: 31%;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+    }
+    &-images-item--tnt {
+        @extend %adding-background;
+        img {
+            width: 260px;
+            padding-top: 31%;
+            padding-bottom: 31%;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+    }
+}

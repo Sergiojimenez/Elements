@@ -1,10 +1,11 @@
 /* ====================================
    Dependencies
    ==================================== */
-
+@import "dependencies/normalize";
 @import "dependencies/mixins";
 @import "dependencies/colors";
 @import "dependencies/fonts";
+@import "dependencies/settings";
 
 /* ====================================
    Foundation
@@ -29,6 +30,8 @@
 @import "components/media";
 @import "components/forms";
 @import "components/grid";
+@import "components/slick-theme";
+@import "components/slick";
 
 /* ====================================
    Regions
