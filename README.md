@@ -1,4 +1,6 @@
-# Elements
+I built a quickly development platform, based on bower and gulp. A html template system oriented to components development.
+
+# Elements installation
 
 Install NodeJS by downloading it here
 
